@@ -34,7 +34,7 @@
   --text-hero-md--line-height: 4rem;
   --text-hero-md--letter-spacing: var(--tracking-hero);
 
-  --text-hero-sm: 2.375rem;
+  --text-hero-sm: min(2.375rem, 10.5vw);
   --text-hero-sm--line-height: 2.75rem;
   --text-hero-sm--letter-spacing: var(--tracking-hero);
 
@@ -84,6 +84,24 @@
   --radius-*: initial;
   --radius-button: 0.375rem;
   --radius-card: 0.9375rem;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-wipe-in: wipe-in 700ms var(--ease-out-expo) 150ms both;
+  --animate-wipe-in-counter: wipe-in-counter 700ms var(--ease-out-expo) 150ms
+    both;
+
+  @keyframes wipe-in {
+    from {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes wipe-in-counter {
+    from {
+      transform: translateX(100%);
+    }
+  }
 }
 
 @utility v-container {
