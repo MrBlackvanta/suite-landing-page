@@ -1,10 +1,13 @@
+import { SITE_NAME } from "@/data";
+
 export default function Logo(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="79"
       height="26"
       viewBox="0 0 79 26"
-      aria-hidden="true"
+      role="img"
+      aria-label={SITE_NAME}
       {...props}
     >
       <path

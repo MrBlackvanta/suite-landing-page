@@ -1,4 +1,4 @@
-import { Signature } from "@/components/layout";
+import { Signature, SiteHeader } from "@/components/layout";
 import { SITE_NAME, SITE_URL } from "@/data";
 import type { Metadata, Viewport } from "next";
 import { Epilogue } from "next/font/google";
@@ -56,6 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${epilogue.variable} antialiased`}>
       <body className="relative flex min-h-dvh flex-col">
+        <SiteHeader />
         {children}
         <Signature />
       </body>

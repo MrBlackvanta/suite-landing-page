@@ -15,9 +15,9 @@
   --color-muted: #49566d;
   --color-paper: #faf8f6;
   --color-sand: #f3ede7;
-  --color-violet: #a060ff;
-  --color-magenta: #cb30e3;
-  --color-orange: #ffa84e;
+  --color-violet: #772dcd;
+  --color-magenta: #9b00b3;
+  --color-orange: #ce7b0f;
 
   --tracking-hero: -0.01389em;
   --tracking-heading: -0.01042em;
@@ -84,6 +84,10 @@
   --radius-*: initial;
   --radius-button: 0.375rem;
   --radius-card: 0.9375rem;
+}
+
+@utility v-container {
+  @apply mx-auto w-full px-4 md:px-9.75 xl:w-277.5 xl:px-0;
 }
 
 @layer base {
