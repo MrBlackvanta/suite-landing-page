@@ -1,6 +1,6 @@
 export default function Signature() {
   return (
-    <footer className="absolute inset-x-0 bottom-0.5 text-center text-footer text-muted">
+    <p className="absolute inset-x-0 bottom-0.5 text-center text-footer text-muted">
       Coded by{" "}
       <a
         href="https://www.linkedin.com/in/abdelrhman-vanta/"
@@ -11,6 +11,6 @@ export default function Signature() {
         Abdelrhman Abdelaal
       </a>
       .
-    </footer>
+    </p>
   );
 }
