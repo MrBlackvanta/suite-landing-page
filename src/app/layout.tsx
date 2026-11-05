@@ -18,7 +18,7 @@ const shareImage = {
   url: "/opengraph-image.jpg",
   width: 1200,
   height: 630,
-  alt: "The suite headline, A super solution for your business, beside a phone charting rising leads on a yellow-to-violet gradient.",
+  alt: "The name suite under the line Marketing and sales automation, beside the home page with its headline, A super solution for your business, and a phone charting rising leads.",
 };
 
 export const metadata: Metadata = {
